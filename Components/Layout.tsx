@@ -6,7 +6,7 @@ export default function Layout({ children }: any) {
   return (
     <Fragment>
       <Navbar />
-      {children}
+      <div>{children}</div>
       <Footer />
     </Fragment>
   );

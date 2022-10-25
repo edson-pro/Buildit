@@ -7,7 +7,3 @@
 .nav-icon {
   @apply text-sm text-primary;
 }
-
-.button {
-  @apply px-5 text-center py-2 text-sm font-semibold rounded-md text-white bg-primary;
-}

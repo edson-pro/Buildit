@@ -1,23 +1,23 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import { Fragment } from "react";
-import Footer from "../Components/Footer";
+import Button from "../Components/Button";
 import Input from "../Components/Input";
 import TextArea from "../Components/Textarea";
 
 const Home: NextPage = () => {
   return (
     <Fragment>
-      <header className="bg-gradient-to-t -mt-16 -z-20 from-[#C6DBFF] relative to-[#E1EBFA]">
+      <header className="bg-gradient-to-t top-0 from-[#C6DBFF] relative to-[#E1EBFA]">
         <img
-          className="absolute right-0 top-0 h-full -z-10"
+          className="absolute right-0 top-0 h-full"
           src="/Figure.svg"
           alt=""
         />
 
         <div className="flex py-16 justify-between gap-10 items-center max-w-5xl mx-auto px-3">
           <div>
-            <h4 className="text-4xl font-bold text-primary leading-[50px]">
+            <h4 className="text-4xl font-bold text-primaryDark leading-[50px]">
               Development <br /> company
             </h4>
             <p className="text-sm my-5 leading-7 text-primary">
@@ -25,15 +25,14 @@ const Home: NextPage = () => {
               with a reputation
             </p>
             <div className="flex gap-4 items-center mt-6">
-              <Link href="/services">
-                <a className="button">Services</a>
-              </Link>
-              <Link href="/about">
-                <a className="button">About the company</a>
-              </Link>
+              <Button href="/services">Services</Button>
+
+              <Button href="/about" variant="normal">
+                About the company
+              </Button>
             </div>
           </div>
-          <div className="max-w-md">
+          <div className="max-w-md relative z-20">
             <img className="w-full py-14" src="/img_group.png" alt="" />
           </div>
         </div>
@@ -49,7 +48,7 @@ const Home: NextPage = () => {
             <div className="bg-[#678C92] w-12 h-12 flex items-center justify-center mb-4 rounded-md">
               <img src="/pen.svg" alt="" />
             </div>
-            <h4 className="text-primary font-bold capitalize text-base">
+            <h4 className="text-primaryDark font-bold capitalize text-base">
               Featured Listing
             </h4>
             <p className="text-sm text-primary my-2 leading-7">
@@ -60,7 +59,7 @@ const Home: NextPage = () => {
             <div className="bg-[#678C92] w-12 h-12 flex items-center justify-center mb-4 rounded-md">
               <img src="/pen.svg" alt="" />
             </div>
-            <h4 className="text-primary font-bold capitalize text-base">
+            <h4 className="text-primaryDark font-bold capitalize text-base">
               Featured Listing
             </h4>
             <p className="text-sm text-primary my-2 leading-7">
@@ -71,7 +70,7 @@ const Home: NextPage = () => {
             <div className="bg-[#678C92] w-12 h-12 flex items-center justify-center mb-4 rounded-md">
               <img src="/pen.svg" alt="" />
             </div>
-            <h4 className="text-primary font-bold capitalize text-base">
+            <h4 className="text-primaryDark font-bold capitalize text-base">
               Featured Listing
             </h4>
             <p className="text-sm text-primary my-2 leading-7">
@@ -91,7 +90,7 @@ const Home: NextPage = () => {
             </div>
             <div>
               <h4 className="text-sm text-primary capitalize my-3">About</h4>
-              <h4 className="text-xl font-bold text-primary leading-[50px]">
+              <h4 className="text-xl font-bold text-primaryDark leading-[50px]">
                 Owner and investor with a reputation
               </h4>
               <p className="text-sm my-5 leading-7 text-primary">
@@ -103,9 +102,7 @@ const Home: NextPage = () => {
                 Mauris dui tortor, viverra vel ultrices in, congue sed ex.
               </p>
               <div className="my-3">
-                <Link href="/exprole">
-                  <a className="button">Exprole</a>
-                </Link>
+                <Button href="/exprole">Exprole</Button>
               </div>
             </div>
           </div>
@@ -116,7 +113,7 @@ const Home: NextPage = () => {
           <h4 className="text-sm text-primary capitalize my-3">
             Available Properties{" "}
           </h4>
-          <h4 className="text-xl font-bold text-primary leading-[50px]">
+          <h4 className="text-xl font-bold text-primaryDark leading-[50px]">
             Featured Listing
           </h4>
           <p className="text-sm my-5 leading-7 text-primary">
@@ -128,9 +125,7 @@ const Home: NextPage = () => {
             viverra vel ultrices in, congue sed ex.
           </p>
           <div className="my-3">
-            <Link href="/exprole">
-              <a className="button">Exprole</a>
-            </Link>
+            <Button href="/exprole">Exprole</Button>
           </div>
         </div>
         <div>
@@ -141,7 +136,7 @@ const Home: NextPage = () => {
       <div className="bg-[#E1EBFA] py-7">
         <div className="flex items-center flex-col justify-center my-8">
           <h4 className="text-sm text-primary capitalize my-3">Socials</h4>
-          <h4 className="text-primary font-bold capitalize text-xl">
+          <h4 className="text-primaryDark font-bold capitalize text-xl">
             On Instagram
           </h4>
         </div>
@@ -161,7 +156,7 @@ const Home: NextPage = () => {
         <div>
           <div className="flex items-start flex-col justify-start my-12">
             <h4 className="text-sm text-primary capitalize my-3">Contact</h4>
-            <h4 className="text-primary font-bold capitalize text-xl">
+            <h4 className="text-primaryDark font-bold capitalize text-xl">
               Get in touch
             </h4>
           </div>
@@ -208,7 +203,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className="my-6 w-full flex">
-              <a className="button w-full">Send Message</a>
+              <Button>Send Message</Button>
             </div>
           </div>
         </form>
