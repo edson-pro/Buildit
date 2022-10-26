@@ -17,6 +17,7 @@ export default function Navbar() {
             <img className="h-12" src="/logo.png" alt="logo" />
           </a>
         </Link>
+        {/* //simple changes */}
         <ul className="flex items-center gap-4">
           {links.map((e, index) => {
             return (
