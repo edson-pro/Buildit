@@ -22,7 +22,7 @@ export default function Navbar() {
             return (
               <li key={index}>
                 <Link href="/about">
-                  <a className="nav-icon">{e.title}</a>
+                  <a className=" text-sm text-primary">{e.title}</a>
                 </Link>
               </li>
             );
