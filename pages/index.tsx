@@ -4,6 +4,16 @@ import Button from "../Components/Button";
 import Contact from "../Components/Contact";
 
 const Home: NextPage = () => {
+  const posts = [
+    "/is1.png",
+    "/is2.png",
+    "/is3.png",
+    "/is4.png",
+    "/is5.png",
+    "/is6.png",
+    "/is7.png",
+    "/is8.png",
+  ];
   return (
     <Fragment>
       <header className="bg-gradient-to-t top-0 from-[#C6DBFF] relative to-[#E1EBFA]">
@@ -139,16 +149,7 @@ const Home: NextPage = () => {
         </div>
         <div className="max-w-5xl my-4 mx-auto px-3">
           <div className="grid grid-cols-3 gap-6">
-            {[
-              "/is1.png",
-              "/is2.png",
-              "/is3.png",
-              "/is4.png",
-              "/is5.png",
-              "/is6.png",
-              "/is7.png",
-              "/is8.png",
-            ].map((e, index) => {
+            {posts.map((e, index) => {
               return <img key={index} src={e} alt="" />;
             })}
           </div>
