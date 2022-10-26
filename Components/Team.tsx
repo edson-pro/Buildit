@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import TeamItem from "./TeamItem";
 
 export default function Team() {
   const teamMembers = [
@@ -21,20 +23,7 @@ export default function Team() {
       <div className="max-w-3xl my-4 mx-auto px-3">
         <div className="grid grid-cols-3 gap-6">
           {teamMembers.map((e, index) => {
-            return (
-              <div
-                key={index}
-                className="shadow-xl shadow-[#9bc2ff40] bg-gradient-to-b from-[#C6DBFF] to-[#E1EBFA]"
-              >
-                <img src={e.photo} alt="" />
-                <div className="py-3 px-2">
-                  <h4 className="text-primaryDark font-semibold text-sm">
-                    {e.name}
-                  </h4>
-                  <span className="text-sm text-primary">{e.role}</span>
-                </div>
-              </div>
-            );
+            return <TeamItem {...e} key={index} />;
           })}
         </div>
       </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Components/Button";
 import Team from "../Components/Team";
 
 export default function About() {
