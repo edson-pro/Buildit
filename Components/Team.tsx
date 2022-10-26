@@ -15,7 +15,7 @@ export default function Team() {
       <div className="flex items-center flex-col justify-center my-12">
         <h4 className="text-sm text-primary capitalize my-3">Our Team</h4>
         <h4 className="text-primaryDark font-bold capitalize text-xl">
-          Let's talk
+          Let&apos;s talk
         </h4>
       </div>
       <div className="max-w-3xl my-4 mx-auto px-3">

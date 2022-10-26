@@ -20,7 +20,7 @@ export default function Navbar() {
         <ul className="flex items-center gap-4">
           {links.map((e, index) => {
             return (
-              <li>
+              <li key={index}>
                 <Link href="/about">
                   <a className="nav-icon">{e.title}</a>
                 </Link>
